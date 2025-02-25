@@ -7,4 +7,6 @@ import lombok.*;
 @NoArgsConstructor
 @AllArgsConstructor
 public class OrderRequest {
+    private String name;
+    private Long price;
 }

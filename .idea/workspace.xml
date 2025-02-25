@@ -4,20 +4,35 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c1e04234-3a74-4f9a-b9c0-909c204b6aec" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Orders/src/main/java/order/example/controller/OrderController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Orders/src/main/java/order/example/model/OrderRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Orders/src/main/java/order/example/service/OrderService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Orders/src/main/resources/application.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Payment/src/main/java/payment/PaymentService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Payment/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shipping/src/main/java/shipping/service/ShippingService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shipping/src/main/resources/application.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application-kafka.yaml" afterDir="false" />
+    <list default="true" id="c1e04234-3a74-4f9a-b9c0-909c204b6aec" name="Changes" comment="pom">
+      <change afterPath="$PROJECT_DIR$/Notifications/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Notifications/src/main/java/notif/service/NotifeApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Notifications/src/main/java/notif/service/NotificationService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Notifications/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Orders/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Orders/src/main/java/order/example/OrderApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Orders/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Payment/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Payment/src/main/java/payment/PaymentApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shipping/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shipping/src/main/java/shipping/service/ShippingApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Shipping/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Notifications/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Notifications/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Orders/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Orders/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Orders/src/main/java/order/example/model/OrderRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Orders/src/main/java/order/example/model/OrderRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Orders/src/main/java/order/example/service/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Orders/src/main/java/order/example/service/OrderService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Orders/src/main/resources/application.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Payment/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Payment/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Payment/src/main/java/payment/PaymentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Payment/src/main/java/payment/service/PaymentService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Payment/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Payment/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shipping/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Shipping/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shipping/src/main/java/shipping/service/ShippingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Shipping/src/main/java/shipping/service/ShippingService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shipping/src/main/resources/application.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application-kafka.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application-kafka.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,6 +43,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Dockerfile" />
       </list>
     </option>
   </component>
@@ -55,7 +71,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/1пк/IdeaProjects/kafka_test",
+    "last_opened_file_path": "C:/Users/oleg2/IdeaProjects/kafka_practice/Shipping",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0"
@@ -66,9 +82,94 @@
       <recent name="order.example.service" />
       <recent name="model" />
     </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\oleg2\IdeaProjects\kafka_practice\Shipping" />
+      <recent name="C:\Users\oleg2\IdeaProjects\kafka_practice\Notifications" />
+      <recent name="C:\Users\oleg2\IdeaProjects\kafka_practice\Orders" />
+      <recent name="C:\Users\oleg2\IdeaProjects\kafka_practice\Payment" />
+      <recent name="C:\Users\oleg2\IdeaProjects\kafka_practice\Orders\src\main\resources" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\1пк\IdeaProjects\kafka_test\src\main\resources" />
     </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn clean spring-boot:run " />
+      <command value="mvn clean" />
+      <command value="mvn dependency:purge-local-repository" />
+      <command value="mvn clean install" />
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.PaymentApp">
+    <configuration name="MainApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="run.example.MainApp" />
+      <module name="kafka_practice" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="run.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NotifeApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="notif.service.NotifeApp" />
+      <module name="Notifications" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="notif.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OrderApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="order.example.OrderApp" />
+      <module name="Orders" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="order.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PaymentApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="payment.PaymentApp" />
+      <module name="Payment" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ShippingApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="shipping.service.ShippingApp" />
+      <module name="Shipping" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="shipping.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.PaymentApp" />
+        <item itemvalue="Application.OrderApp" />
+        <item itemvalue="Application.MainApp" />
+        <item itemvalue="Application.NotifeApp" />
+        <item itemvalue="Application.ShippingApp" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -80,5 +181,16 @@
       <updated>1740125256780</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

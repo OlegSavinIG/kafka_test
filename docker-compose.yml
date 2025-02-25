@@ -1,0 +1,64 @@
+version: '3'
+
+services:
+  zookeeper:
+    image: confluentinc/cp-zookeeper:7.2.0
+    environment:
+      ZOOKEEPER_CLIENT_PORT: 2181
+
+  kafka:
+    image: confluentinc/cp-kafka:7.2.0
+    depends_on:
+      - zookeeper
+    environment:
+      KAFKA_BROKER_ID: 1
+      KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
+      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://kafka:9092
+      KAFKA_AUTO_CREATE_TOPICS_ENABLE: 'false'
+    ports:
+      - "9092:9092"
+    healthcheck:
+      test: ["CMD", "kafka-topics", "--bootstrap-server", "kafka:9092", "--list"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  kafka-setup:
+    image: confluentinc/cp-kafka:7.2.0
+    depends_on:
+      - kafka
+    entrypoint: [ "/bin/sh", "-c" ]
+    command: |
+      "echo 'Creating Kafka topics...';
+      until kafka-topics --bootstrap-server kafka:9092 --list; do
+        echo 'Waiting for Kafka...';
+        sleep 5;
+      done;
+      kafka-topics --bootstrap-server kafka:9092 --create --if-not-exists --topic new_orders --partitions 3 --replication-factor 1;
+      kafka-topics --bootstrap-server kafka:9092 --create --if-not-exists --topic payed_orders --partitions 3 --replication-factor 1;
+      kafka-topics --bootstrap-server kafka:9092 --create --if-not-exists --topic sent_orders --partitions 3 --replication-factor 1;
+      echo 'Topics created!';
+      exit 0"
+
+  orders-service:
+    build: ./Orders
+    ports:
+      - "8080:8080"
+    depends_on:
+      kafka:
+        condition: service_healthy
+
+  payment-service:
+    build: ./Payment
+    depends_on:
+      - kafka-setup
+
+  shipping-service:
+    build: ./Shipping
+    depends_on:
+      - kafka-setup
+
+  notifications-service:
+    build: ./Notifications
+    depends_on:
+      - kafka-setup

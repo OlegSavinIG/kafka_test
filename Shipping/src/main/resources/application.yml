@@ -1,0 +1,6 @@
+spring:
+  config:
+    import: optional:classpath:application-kafka.yml
+  kafka:
+    consumer:
+      group-id: shipping-group

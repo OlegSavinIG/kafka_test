@@ -1,8 +1,7 @@
 spring:
   config:
     import: optional:classpath:/application-kafka.yml
+
   kafka:
     consumer:
-      group-id: payment-group
-  server:
-    port: 8081
+      group-id: notification_service

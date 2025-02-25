@@ -1,4 +1,4 @@
-package shipping.service;
+package notif.service;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -10,13 +10,11 @@ import org.springframework.stereotype.Service;
 @Service
 @Slf4j
 @RequiredArgsConstructor
-public class ShippingService {
+public class NotificationService {
     private final KafkaTemplate<String, String> kafkaTemplate;
-    @KafkaListener(topics = "payed_orders")
-    public void processPayment(ConsumerRecord<String, String> record) throws InterruptedException {
+    @KafkaListener(topics = "shipped_orders")
+    public void sendNotification(ConsumerRecord<String, String> record){
         String value = record.value();
-        System.out.println("Value for shipping received "+value);
-        Thread.sleep(1000);
-        kafkaTemplate.send("shipped_orders", value + "shipped");
+        log.info("Value for notification {}", value);
     }
 }

@@ -1,6 +1,0 @@
-spring:
-  config:
-    import: classpath:application-kafka.yaml
-  kafka:
-    consumer:
-      group-id: orders-group
