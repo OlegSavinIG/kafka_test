@@ -1,7 +1,6 @@
 package order.example.service;
 
 import lombok.RequiredArgsConstructor;
-import order.example.model.OrderRequest;
 import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.stereotype.Service;
 
