@@ -4,21 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c1e04234-3a74-4f9a-b9c0-909c204b6aec" name="Changes" comment="first configuration">
+    <list default="true" id="c1e04234-3a74-4f9a-b9c0-909c204b6aec" name="Changes" comment="delete docker">
+      <change afterPath="$PROJECT_DIR$/Orders/src/main/java/order/example/kafka/KafkaConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Notifications/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Notifications/src/main/java/notif/service/NotificationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Notifications/src/main/java/notif/service/NotificationService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Notifications/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Notifications/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Orders/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Orders/src/main/java/order/example/controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Orders/src/main/java/order/example/controller/OrderController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Orders/src/main/java/order/example/service/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Orders/src/main/java/order/example/service/OrderService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Orders/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Orders/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Payment/Dockerfile" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Payment/src/main/java/payment/service/PaymentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Payment/src/main/java/payment/service/PaymentService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Payment/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Payment/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shipping/Dockerfile" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Shipping/src/main/java/shipping/service/ShippingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Shipping/src/main/java/shipping/service/ShippingService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Shipping/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Shipping/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application-kafka.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application-kafka.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,8 +27,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Dockerfile" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -51,29 +50,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/oleg2/IdeaProjects/kafka_practice/Shipping&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "C:/Users/oleg2/IdeaProjects/kafka_practice/Orders/src/main/java/order/example",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="order.example.service" />
       <recent name="model" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\oleg2\IdeaProjects\kafka_practice\Orders\src\main\java\order\example" />
       <recent name="C:\Users\oleg2\IdeaProjects\kafka_practice\Shipping" />
       <recent name="C:\Users\oleg2\IdeaProjects\kafka_practice\Notifications" />
       <recent name="C:\Users\oleg2\IdeaProjects\kafka_practice\Orders" />
       <recent name="C:\Users\oleg2\IdeaProjects\kafka_practice\Payment" />
-      <recent name="C:\Users\oleg2\IdeaProjects\kafka_practice\Orders\src\main\resources" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\1пк\IdeaProjects\kafka_test\src\main\resources" />
@@ -88,7 +87,7 @@
       <command value="mvn clean install" />
     </option>
   </component>
-  <component name="RunManager" selected="Application.ShippingApp">
+  <component name="RunManager" selected="Application.NotifeApp">
     <configuration name="MainApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="run.example.MainApp" />
       <module name="kafka_practice" />
@@ -150,9 +149,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.NotifeApp" />
         <item itemvalue="Application.PaymentApp" />
         <item itemvalue="Application.ShippingApp" />
-        <item itemvalue="Application.NotifeApp" />
         <item itemvalue="Application.OrderApp" />
         <item itemvalue="Application.MainApp" />
       </list>
@@ -174,7 +173,14 @@
       <option name="project" value="LOCAL" />
       <updated>1740509623115</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="delete docker">
+      <created>1740554288667</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1740554288667</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -190,6 +196,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first configuration" />
-    <option name="LAST_COMMIT_MESSAGE" value="first configuration" />
+    <MESSAGE value="delete docker" />
+    <option name="LAST_COMMIT_MESSAGE" value="delete docker" />
   </component>
 </project>

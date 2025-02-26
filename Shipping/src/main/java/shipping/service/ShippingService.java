@@ -12,14 +12,9 @@ import org.springframework.stereotype.Service;
 @RequiredArgsConstructor
 public class ShippingService {
     private final KafkaTemplate<String, String> kafkaTemplate;
-    @KafkaListener(topics = "payed_orders")
-    public void processPayment(ConsumerRecord<String, String> record) throws InterruptedException {
-        String value = record.value();
-        System.out.println();
-        System.out.println();
-        System.out.println();
-        System.out.println("Value for shipping received "+value);
-        Thread.sleep(1000);
-        kafkaTemplate.send("shipped_orders", value + "shipped");
+    @KafkaListener(topics = "payed_orders", groupId = "shipping_group")
+    public void shipOrder(String order) {
+        System.out.println("Shipping order: " + order);
+        kafkaTemplate.send("sent_orders", order + " shipped, ");
     }
 }

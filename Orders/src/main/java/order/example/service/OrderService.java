@@ -9,8 +9,8 @@ import org.springframework.stereotype.Service;
 @RequiredArgsConstructor
 public class OrderService {
     private final KafkaTemplate<String, String> kafkaTemplate;
-    public void createOrder(OrderRequest orderRequest) {
-        System.out.println("Sending to payment " + orderRequest.toString());
-        kafkaTemplate.send("new_orders", "ORDER SEND!!!!");
+    public void createOrder(String order) {
+        System.out.println("Created order " + order);
+        kafkaTemplate.send("new_orders", order + " created, ");
     }
 }

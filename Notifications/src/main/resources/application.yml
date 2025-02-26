@@ -3,8 +3,7 @@ server:
 
 
 spring:
-  config:
-    import: optional:classpath:application-kafka.yml
   kafka:
+    bootstrap-servers: localhost:9093
     consumer:
-      group-id: notification_service
+      group-id: notification_group

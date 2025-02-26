@@ -12,9 +12,8 @@ import org.springframework.stereotype.Service;
 @RequiredArgsConstructor
 public class NotificationService {
     private final KafkaTemplate<String, String> kafkaTemplate;
-    @KafkaListener(topics = "shipped_orders")
-    public void sendNotification(ConsumerRecord<String, String> record){
-        String value = record.value();
-        log.info("Value for notification {}", value);
+    @KafkaListener(topics = "sent_orders", groupId = "notification_group")
+    public void notifyUser(String order) {
+        System.out.println("Order delivered notification sent for: " + order);
     }
 }

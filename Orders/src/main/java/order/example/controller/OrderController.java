@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class OrderController {
     private final OrderService service;
     @PostMapping
-    public void createOrder(@RequestBody OrderRequest orderRequest){
+    public void createOrder(@RequestBody String orderRequest){
         service.createOrder(orderRequest);
     }
 }

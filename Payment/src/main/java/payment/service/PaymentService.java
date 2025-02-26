@@ -13,15 +13,10 @@ import org.springframework.stereotype.Service;
 @Slf4j
 public class PaymentService {
     private final KafkaTemplate<String, String> kafkaTemplate;
-    @KafkaListener(topics = "new_orders")
-    public void processPayment(String order) throws InterruptedException {
-//        String value = record.value();
-        log.info("Value received");
-        log.info("Value received {}", order);
-        log.info("Value received {}", order);
-        log.info("Value received {}", order);
-//        Thread.sleep(500);
-        kafkaTemplate.send("payed_orders", order + "payment successful");
+    @KafkaListener(topics = "new_orders", groupId = "payment_group")
+    public void processPayment(String order) {
+        System.out.println("Processing payment for order: " + order);
+        kafkaTemplate.send("payed_orders", order + " payed, ");
     }
 
 }
