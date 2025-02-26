@@ -1,7 +1,10 @@
+server:
+  port: 8083
+
+
 spring:
   config:
-    import: optional:classpath:/application-kafka.yml
-
+    import: optional:classpath:application-kafka.yml
   kafka:
     consumer:
       group-id: notification_service

@@ -15,6 +15,9 @@ public class ShippingService {
     @KafkaListener(topics = "payed_orders")
     public void processPayment(ConsumerRecord<String, String> record) throws InterruptedException {
         String value = record.value();
+        System.out.println();
+        System.out.println();
+        System.out.println();
         System.out.println("Value for shipping received "+value);
         Thread.sleep(1000);
         kafkaTemplate.send("shipped_orders", value + "shipped");

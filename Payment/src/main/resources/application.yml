@@ -1,8 +1,10 @@
+server:
+  port: 8082
+
+
 spring:
   config:
-    import: optional:classpath:/application-kafka.yml
+    import: optional:classpath:application-kafka.yml
   kafka:
     consumer:
       group-id: payment-group
-  server:
-    port: 8081

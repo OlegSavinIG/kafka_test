@@ -4,35 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c1e04234-3a74-4f9a-b9c0-909c204b6aec" name="Changes" comment="pom">
-      <change afterPath="$PROJECT_DIR$/Notifications/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Notifications/src/main/java/notif/service/NotifeApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Notifications/src/main/java/notif/service/NotificationService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Notifications/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Orders/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Orders/src/main/java/order/example/OrderApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Orders/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Payment/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Payment/src/main/java/payment/PaymentApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shipping/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shipping/src/main/java/shipping/service/ShippingApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shipping/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+    <list default="true" id="c1e04234-3a74-4f9a-b9c0-909c204b6aec" name="Changes" comment="first configuration">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Notifications/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Notifications/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Orders/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Orders/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Orders/src/main/java/order/example/model/OrderRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Orders/src/main/java/order/example/model/OrderRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Notifications/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Notifications/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Notifications/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Orders/Dockerfile" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Orders/src/main/java/order/example/service/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Orders/src/main/java/order/example/service/OrderService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Orders/src/main/resources/application.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Payment/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Payment/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Payment/src/main/java/payment/PaymentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Payment/src/main/java/payment/service/PaymentService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Orders/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Orders/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Payment/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Payment/src/main/java/payment/service/PaymentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Payment/src/main/java/payment/service/PaymentService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Payment/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Payment/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shipping/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Shipping/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shipping/Dockerfile" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Shipping/src/main/java/shipping/service/ShippingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Shipping/src/main/java/shipping/service/ShippingService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shipping/src/main/resources/application.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application-kafka.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application-kafka.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shipping/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Shipping/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,18 +51,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/oleg2/IdeaProjects/kafka_practice/Shipping",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/oleg2/IdeaProjects/kafka_practice/Shipping&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="order.example.service" />
@@ -98,10 +84,11 @@
       <command value="mvn clean spring-boot:run " />
       <command value="mvn clean" />
       <command value="mvn dependency:purge-local-repository" />
+      <command value="mvn clean package -DskipTests" />
       <command value="mvn clean install" />
     </option>
   </component>
-  <component name="RunManager" selected="Application.PaymentApp">
+  <component name="RunManager" selected="Application.ShippingApp">
     <configuration name="MainApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="run.example.MainApp" />
       <module name="kafka_practice" />
@@ -164,10 +151,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.PaymentApp" />
+        <item itemvalue="Application.ShippingApp" />
+        <item itemvalue="Application.NotifeApp" />
         <item itemvalue="Application.OrderApp" />
         <item itemvalue="Application.MainApp" />
-        <item itemvalue="Application.NotifeApp" />
-        <item itemvalue="Application.ShippingApp" />
       </list>
     </recent_temporary>
   </component>
@@ -180,6 +167,14 @@
       <option name="presentableId" value="Default" />
       <updated>1740125256780</updated>
     </task>
+    <task id="LOCAL-00001" summary="first configuration">
+      <created>1740509623115</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1740509623115</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -192,5 +187,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="first configuration" />
+    <option name="LAST_COMMIT_MESSAGE" value="first configuration" />
   </component>
 </project>
